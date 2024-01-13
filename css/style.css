@@ -1,0 +1,831 @@
+/*Reset de pagina*/
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+
+/*Fim reset de pagina*/
+
+/*Placeholder font-sizes*/
+
+.custom-placeholder::placeholder {
+    font-size:13px !important;
+}
+
+.form-select-xl::placeholder{
+    font-size: 13px !important; 
+}
+
+/*Fim placeholder font-sizes*/
+
+/*VARs de cores*/
+
+:root{
+	--red:#e64141;
+	--white:#ffffff;
+    --white-rgba:rgba(255, 255, 255, 0.9);
+	--gray-bg:#555555;
+	--gray-secondary-text:#8f8f8f;
+	--black:#333333;
+    --blue1:#200e96;
+    --blue2:#1db1f5;
+}
+
+/*Fim VARs*/
+
+/*Colors*/
+
+.red{
+	color:var(--red) !important;
+}
+
+.gray-text{
+	color:var(--gray-secondary-text) !important;
+}
+
+.black{
+	color:var(--black) !important;
+}
+
+.white{
+	color:var(--white) !important;
+}
+
+.white-rgba{
+    color:var(--white-rgba) !important;
+}
+
+.blue1{
+    color:var(--blue1);
+}
+
+/*Fim colors*/
+
+/*Custom font-sizes*/
+
+.fs-custom1{
+    font-size:15px !important;
+}
+
+.fs-custom2{
+    font-size:17px !important;
+}
+
+.fs-custom3{
+    font-size:13px !important;
+}
+
+.fs-custom4{
+    font-size:10px !important;
+}
+
+.fs-custom5{
+    font-size:20px !important;
+}
+
+.fs-custom6{
+    font-size:24px !important;
+}
+
+.fs-custom7{
+    font-size:8px !important;
+}
+
+.fs-custom8{
+    font-size:10.5px !important;
+}
+
+/*Fim custom font-sizes*/
+
+/*Text-align*/
+
+.text-align-left{
+    text-align:left;
+}
+
+/*Fim text-align*/
+
+/*Custom margins e paddings*/
+
+.custom-mb{
+    margin-bottom:15rem;
+}
+
+.custom-mt{
+    margin-top:8.9rem;
+}
+
+.custom-ms{
+    margin-left:8rem;
+}
+
+.ps-custom{
+    padding-left:30px;
+}
+
+.user-custom-ms{
+    margin-left:15rem;
+}
+
+.home-custom-mt{
+    margin-top:22rem;
+}
+
+.custom-mt-details{
+    margin-top:5.2rem;
+}
+
+.pe-custom-slide{
+    padding-right:7rem;
+}
+
+.ps-custom-slide{
+    padding-left:7rem;
+}
+/* Custom width */
+
+.custom-width{
+    width:35% !important;
+}
+
+/*Fim custom width*/
+
+/*Fim customs margins e paddings*/
+
+/*Custom borders*/
+
+.custom-border{
+    border:5px solid var(--white);
+}
+
+/*Fim custom borders*/
+
+/*BGs colors*/
+
+.bg-red{
+	background-color:var(--red) !important;
+}
+
+.bg-gray{
+	background-color:var(--gray-bg) !important;
+}
+
+.bg-black{
+	background-color:var(--black) !important;
+}
+
+.bg-white{
+	background-color:var(--white) !important;
+}
+
+.bg-gray-rgba{
+	background-color:rgba(237, 237, 237, 0.2) !important;
+}
+
+/*Fim bg-colors*/
+
+/*Navbar*/
+
+.navbar-nav .nav-item:not(.dropdown):hover .nav-link {
+	transition: color 0.3s ease, background-color 0.3s ease; /* Transição suave da cor do texto e background-color */
+    color:var(--white); /* Cor desejada ao passar o mouse */
+    background-color:var(--red); /* Cor de fundo desejada ao passar o mouse */
+}
+
+.navbar .dropdown-menu {
+    border: none; /* Remove a borda */
+    border-radius: 0; /* Remove o border-radius */
+}
+
+/*Fim navbar*/
+
+/*Barra de pesquisa*/
+
+.search-container {
+	display: flex;
+    justify-content:flex-start;
+    align-items: center;
+}
+
+.search-input {
+	background-color:#f8f8f8;
+	padding:8px;
+    font-size:16px;
+    border:none;
+    outline:none;
+    max-width:450px;
+    width:50%;
+    flex:1;
+}
+        
+.search-button {
+	background-color:var(--red);
+    color:white;
+    border:none;
+    padding:8px 16px;
+    cursor:pointer;
+}
+
+.search-container input::placeholder {
+    color:var(--gray-secondary-text);
+    font-size:13px; 
+}
+
+/*Fim barra de pesquisa*/
+
+/*Config slide-home*/
+
+.slide-img-home{
+    background:url('../imagens/2.jpg');
+    background-size:cover;
+    background-position:center center;
+    height:75vh;  
+}
+
+.info-left span, .info-left h2, .info-right h2{
+    font-size:10px;
+}
+
+.info-left i{
+    font-size:15px;
+    margin-right:3px;
+}
+
+.info-left span:nth-last-child(-n+2){
+    margin-top:20px;
+}
+
+.info-right h3 > span{
+    font-size:10px;
+}
+
+.info-right{
+    margin-left:4rem;
+}
+
+/*Botão azul slide principal*/
+
+.myButton{
+    background-color:var(--red);
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-size:15px;
+    padding:6px 26px;
+    text-decoration:none;
+    margin-top:20px;
+}
+
+.myButton:hover {
+    background-color:#f73b3b;
+    color:#ffffff;
+}
+
+.myButton:active {
+    position:relative;
+    top:1px;
+}
+
+
+/*Fim config slide-home*/
+
+/*Slides venda, locação, oferta e recentes*/
+
+.slide-img-recentes, .slide-img-locaçao, .slide-img-locaçao-mini{
+    background:url('../imagens/miami.jpg');
+    background-size:cover;
+    background-position:center center;
+    width:200px;
+    height:65vh;
+    display:block;  
+}
+
+.slide-img-locaçao-mini, .bg-text{
+    width:200px;
+    height:32.5vh;
+}
+
+/*Fim slides venda, locação, oferta e recentes*/
+
+/* Pagina vendas e locação */
+
+.map-imoveis{
+    background:url('../imagens/map.jpg');
+    background-size:cover;
+    background-position:center center;
+    width:350px;
+    height:500px;
+    display:block;
+    border:1px solid rgba(237, 237, 237, 0.2) !important;;
+    border-radius:7px; 
+}
+
+ .btn1, .btn2, .btn-drop{
+    background-color:rgba(237, 237, 237, 0.2) !important;
+    color:var(--black) !important;
+    height:30px;
+    margin-top:4px;
+    padding:2px 10px !important;
+    border-radius:0 !important;
+    border:0 !important;
+}
+
+.btn-drop{
+    margin-left:10rem;
+}
+
+.dropdown-item{
+    transition:0.4s !important;
+}
+
+.dropdown-item:hover{
+    background-color:rgba(237, 237, 237, 0.5) !important;
+}
+
+.dropdown-item a:hover{
+    color:#f73b3b !important;
+}
+
+.btn2{
+    background-color:rgba(207, 223, 250, 0.3) !important;
+}
+
+.btn1{
+    height:initial;
+    padding:initial;
+    margin-top:initial;
+}
+
+.fa-bookmark, .fa-bell{
+    transition:0.3s;
+}
+
+.fa-bookmark:hover, .fa-bell:hover{
+    color:var(--red);
+}
+
+.info-imoveis{
+    padding:0.7rem;
+}
+
+.icon-ms{
+    margin-left:10.5rem
+}
+
+.info-imoveis span{
+    font-size:10px;
+}
+
+.info-imoveis span > i{
+    font-size:10px;
+    margin-right:3px;
+}
+
+.info-imoveis h3 > a i{
+    margin-left:3px;
+    transition:0.4s;
+/*    cursor:pointer;*/
+}
+
+.info-imoveis h3 > a i:hover{
+    color:var(--red);
+}
+
+.single-item{
+    width:350px;
+}
+
+.btnWhatsApp, .btnDetails{
+    border-radius:6px;
+    border:1px solid #25D366;
+    display:inline-block;
+    cursor:pointer;
+    color:#25D366;
+    font-size:12px;
+    padding:2px 14px;
+    text-decoration:none;
+    transition:0.5s;
+}
+
+.btnWhatsApp:hover {
+    background-color:#25D366;
+    color:var(--white);
+}
+
+.btnDetails{
+    border:1px solid var(--red);
+    color:var(--red);
+    padding:2px 6px;
+}
+
+.btnDetails:hover{
+    background-color:var(--red);
+    color:var(--white);
+}
+
+.circle-img{
+    width:50px;
+    height:50px;
+    background-color:var(--gray-bg);
+    border-radius:50%;
+}
+
+/* Fim pagina vendas e locação */
+
+/* Pagina detalhes */
+
+.picture-imovel, .picture-imovel-mini{
+    background:url('../imagens/15259789951.jpg');
+    background-size:cover;
+    background-position:center center;
+    width:300px;
+    height:270px;
+    display:block;
+}
+
+.picture-imovel-mini{
+    height:135px;
+}
+
+.chevron{
+    background-color:rgba(237, 237, 237, 0.9) !important;
+    width:35px;
+    height:35px;
+    text-align: center;
+    line-height: 35px; 
+}
+
+.chevron i{
+    font-size:16px;
+    color:var(--gray-secondary-text);
+}
+
+.title div > span{
+    width:auto;
+    height:20px;
+}
+
+.title div > h2, .info-imovel div > h2{
+    margin-top:-0.4rem;
+    font-size:9px;
+}
+
+.carousel-item div div > img{
+    border:5px solid var(--white);
+}
+
+.carousel-control-prev, .carousel-control-next{
+  background-color:var(--black) !important; /* Cor de fundo personalizada */
+  width:50px !important;
+  height:50px !important;
+}
+
+.marginBTN1, .marginBTN2{
+    margin-top:6.5rem;
+}
+
+.marginBTN1{
+    margin-left:-3.3rem;
+}
+
+.marginBTN2{
+    margin-right:-3.3rem;
+}
+
+.description-title > p, .form-price .card .card-body > p{
+    border-bottom: 1.5px solid rgba(237, 237, 237, 0.5) !important; 
+    width:38rem;
+    margin-top:1rem;
+    margin-left:4px;
+}
+
+.form-price .card .card-body > p{
+    width:18rem;
+}
+
+.data-info{
+    border:2px solid rgba(237, 237, 237, 0.9);
+}
+
+.fs-inputs{
+    font-size: 13px !important;
+    padding-left:10px !important;
+    padding-right:10px !important;
+}
+
+/* Fim pagina detalhes */
+
+/*Sub-footer*/
+
+.sub-footer h1{
+    color:var(--blue1);
+}
+
+.sub-footer h1 > span{
+    color:var(--blue2);
+}
+
+.btnForm > .subFooterBtn{
+    width:100%;
+    text-align:center;
+}
+
+.btnForm > .subFooterBtn2{
+    width:100%;
+    text-align:center;
+}
+
+.subFooterBtn, .subFooterBtn2, .subFooterBtn3{
+    border:1px solid var(--red);
+    display:inline-block;
+    cursor:pointer;
+    color:var(--red);
+    font-size:15px;
+    text-decoration:none;
+    border-radius:5px;
+    text-align:left;
+    transition:0.5s;
+}
+
+.subFooterBtn3{
+    margin-left:5px;
+    font-size:10.5px;
+}
+
+.subFooterBtn2{
+    border:1px solid #25D366;
+    color:#25D366;
+}
+
+.subFooterBtn2:hover{
+    background-color:#25D366;
+    color:var(--white)   
+}
+
+.subFooterBtn:hover, .subFooterBtn3:hover{
+    background-color:var(--red);
+    color:var(--white);
+}
+
+/*Fim sub-footer*/
+
+/* Chevron icon */
+
+.fa-chevron-right{
+    font-size:12px;
+    color:var(--gray-secondary-text);
+    opacity:0.3;
+    margin-right:8px;
+}
+
+/* Fim chevron icon */
+
+/*Footer*/
+
+.newsletter input[type="email"], .newsletter input[type="text"]{
+    padding:5px; 
+    font-size:16px; 
+    border:0; 
+    border-radius:5px; 
+}
+
+input[type="email"]:focus, input[type="text"]:focus{
+    outline: none;
+}
+
+.newsletter > .footerBtn{
+    padding:4px 15px; 
+    font-size:16px; 
+    border:0; 
+    background-color:var(--red);
+    color:var(--white);
+    margin-left:3rem;
+}
+/*Fim footer*/
+
+/*Media querys*/
+
+@media screen and (max-width: 1300px){
+    /* display-slides */
+
+    .pe-custom-slide{
+        padding-right:initial;
+    }
+
+    .ps-custom-slide{
+        padding-left:initial;
+    }
+
+    .responsive-slide{
+        display:none !important;
+    }
+
+    /* fim display-slides */
+
+    /* Modal btn pagina venda e aluguel */
+
+    .subFooterBtn3{
+        margin-left:0;
+        margin-top:5px;
+        width:100%;
+    }
+
+    /* Fim modal btn pagina venda e aluguel */
+
+    /* margins captions home-slide */
+
+    .home-custom-mt{
+        margin-top:21rem;
+    }
+
+    /* fim margins captions home-slide */
+
+    /* subFooter detalhes */
+
+    .custom-mt-details{
+        margin-top:initial;
+        margin-bottom:2rem;
+    }
+
+    /* fim subFooter detalhes*/
+
+    /* slide pagina detalhes */
+
+    .picture-imovel{
+        height:170px;
+    }
+
+    /* fim pagina detalhes */
+
+    .rating div > .fs-custom3{
+        font-size:10px;
+    }
+
+    .conditions > .fs-custom3{
+        font-size:10px;
+    }
+}
+
+@media screen and (max-width: 1124px){
+    /* config slide-home  */
+
+    .user-custom-ms{
+        margin-left:initial;
+    }
+
+    .info-right{
+        margin-left:1rem;
+    }
+
+    .fs-custom1, .info-left i{
+        font-size:12px;
+    }
+
+    .info-left span, .info-left h2, .info-right h2{
+        font-size:8px;
+    }
+
+    .myButton{
+        font-size:12px;
+    }
+
+    /* fim config slide-home */
+
+    /* config slide locação e venda */
+
+     .slide-img-locaçao-mini{
+        margin-top:10px;
+    }
+    
+    /* fim config slide locação e venda */
+
+    /* pagina venda e locação */
+
+    .btn-drop{
+        margin-left:6rem;
+    }
+
+    .imoveis h1{
+        text-align:center;
+    }
+
+    .info-imoveis{
+        padding:initial;
+        margin-bottom:2rem;
+    }
+
+    .icon-ms{
+        margin-left:0;
+    }
+
+    .map-imoveis{
+        width:300px;
+        height:300px;
+    }
+
+    /* Fim pagina venda e locação */
+
+    /* Pagina detalhes */
+
+    .carousel-control-prev, .carousel-control-next{
+        width:30px !important;
+        height:30px !important;
+        padding:4px !important;
+    }
+
+    .marginBTN1, .marginBTN2{
+        margin-top:4rem;
+    }
+
+    .marginBTN1{
+        margin-left:1rem;
+    }  
+
+    .marginBTN2{
+        margin-right:1rem;
+    }
+
+    .list-characteristics > .fs-custom3, .details-left > .fs-custom3, .details-right > .fs-custom3{
+        font-size:9px;
+    }
+
+    .description-section span{
+        font-size:11px;
+    }
+
+    .description-section > div div h1{
+        font-size:9px;
+    }
+
+    .ps-custom{
+        padding-left:11px;
+    }
+
+    /* Fim pagina detalhes */
+
+    /* font-size config */
+
+     .fs-custom2{
+        font-size:15px;
+    }
+
+    .fs-custom5{
+        font-size:17px;
+    }
+
+    /* fim font-size config */
+
+    /* subFooter */
+
+    .subFooterBtn{
+        margin:10px 0;
+    }
+
+    /* fim subfooter */
+
+    /* footer */
+
+    .newsletter > .footerBtn{
+        margin-left:0;
+    }
+
+    /* fim footer */
+    
+    /* custom-border */
+
+    .custom-border{
+        border:0;
+    }
+
+    /* fim custom-border */
+
+    /* custom width */
+
+    .custom-width{
+        width:auto !important;
+    }
+
+    /* Fim custom width */
+
+    /* bg-text slider locação e venda */
+
+    .bg-text{
+        width:initial;
+        height:initial;
+    }
+
+    /* fim bg-text slider locação e venda */
+    
+    /* text-align */
+
+    .text-align-center{
+        text-align:center;
+    }
+
+    /* fim text-align */
+}
+
+/*Fim media querys*/
+
