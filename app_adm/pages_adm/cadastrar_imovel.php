@@ -3,7 +3,8 @@
    include_once("../php_adm/connect.php");
    include("../php_adm/metatags.php"); 
    include("navbar.php"); 
-?> 
+?>
+
 <section class="container mt-5">
     <div class="row">
         <div class="col-lg-12">
@@ -29,14 +30,14 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3 mt-2 mb-2 mb-md-0 mt-md-0">
+                    <div class="col-lg-3 mt-2 mb-2 mb-md-0 mt-md-0">
                         <h6 class="text-uppercase mn-blue fw-semibold fs-custom8">Tipo de imóvel</h6>
                         <select class="form-select fs-custom3 rounded-0" id="tipo_imovel" name="tipo_imovel" required>
                             <option value="casa">Casa</option>
                             <option value="apartamento">Apartamento</option>
                         </select>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-lg-3">
                         <h6 class="text-uppercase mn-blue fw-semibold fs-custom8">categoria</h6>
                         <select class="form-select fs-custom3 rounded-0" id="categoria" name="categoria" required>
                             <option value="residencial">Residencial</option>
@@ -45,35 +46,35 @@
                     </div>
                 </div>
                 <div class="row mt-3 mt-md-5">
-                    <div class="col-md-2 mb-2 mb-md-0">
+                    <div class="col-lg-2 mb-2 mb-md-0">
                         <h6 class="text-uppercase mn-blue fw-semibold fs-custom8">Quarto</h6>
                         <select class="form-select fs-custom3 rounded-0" id="Quarto" name="Quarto" required>
                             <option value="0">0</option>
                             <option value="1">1</option>
                         </select>
                     </div>
-                    <div class="col-md-2 mb-2 mb-md-0">
+                    <div class="col-lg-2 mb-2 mb-md-0">
                         <h6 class="text-uppercase mn-blue fw-semibold fs-custom8">Súite</h6>
                         <select class="form-select fs-custom3 rounded-0" id="tipo_imovel" name="tipo_imovel" required>
                             <option value="0">0</option>
                             <option value="1">1</option>
                         </select>
                     </div>
-                    <div class="col-md-2 mb-2 mb-md-0">
+                    <div class="col-lg-2 mb-2 mb-md-0">
                         <h6 class="text-uppercase mn-blue fw-semibold fs-custom8">Banheiro</h6>
                         <select class="form-select fs-custom3 rounded-0" id="tipo_imovel" name="tipo_imovel" required>
                             <option value="0">0</option>
                             <option value="1">1</option>
                         </select>
                     </div>
-                    <div class="col-md-2 mb-2 mb-md-0">
+                    <div class="col-lg-2 mb-2 mb-md-0">
                         <h6 class="text-uppercase mn-blue fw-semibold fs-custom8">Vagas</h6>
                         <select class="form-select fs-custom3 rounded-0" id="tipo_imovel" name="tipo_imovel" required>
                             <option value="0">0</option>
                             <option value="1">1</option>
                         </select>
                     </div>
-                    <div class="col-md-4 mb-2 mb-md-0">
+                    <div class="col-lg-4 mb-2 mb-md-0">
                         <h6 class="text-uppercase mn-blue fw-semibold fs-custom8">Tipo de vaga</h6>
                         <select class="form-select fs-custom3 rounded-0" id="tipo_imovel" name="tipo_imovel" required>
                             <option value="casa">Tipo 1</option>
@@ -83,35 +84,35 @@
                 </div>
 
                 <div class="row mt-5">
-                    <div class="col-md-2 mb-2 mb-md-0">
+                    <div class="col-lg-2 mb-2 mb-md-0">
                         <h6 class="text-uppercase mn-blue fw-semibold fs-custom8">Área Útil</h6>
                         <select class="form-select fs-custom3 rounded-0" id="Quarto" name="Quarto" required>
                             <option value="0">0</option>
                             <option value="1">1</option>
                         </select>
                     </div>
-                    <div class="col-md-2 mb-2 mb-md-0">
+                    <div class="col-lg-2 mb-2 mb-md-0">
                         <h6 class="text-uppercase mn-blue fw-semibold fs-custom8">Área Total</h6>
                         <select class="form-select fs-custom3 rounded-0" id="tipo_imovel" name="tipo_imovel" required>
                             <option value="0">0</option>
                             <option value="1">1</option>
                         </select>
                     </div>
-                    <div class="col-md-2 mb-2 mb-md-0">
+                    <div class="col-lg-2 mb-2 mb-md-0">
                         <h6 class="text-uppercase mn-blue fw-semibold fs-custom8">Sacada</h6>
                         <select class="form-select fs-custom3 rounded-0" id="tipo_imovel" name="tipo_imovel" required>
                             <option value="0">0</option>
                             <option value="1">1</option>
                         </select>
                     </div>
-                    <div class="col-md-2 mb-2 mb-md-0">
+                    <div class="col-lg-2 mb-2 mb-md-0">
                         <h6 class="text-uppercase mn-blue fw-semibold fs-custom8">Andar</h6>
                         <select class="form-select fs-custom3 rounded-0" id="tipo_imovel" name="tipo_imovel" required>
                             <option value="0">0</option>
                             <option value="1">1</option>
                         </select>
                     </div>
-                    <div class="col-md-4 mb-2 mb-md-0">
+                    <div class="col-lg-4 mb-2 mb-md-0">
                         <h6 class="text-uppercase mn-blue fw-semibold fs-custom8">Vista</h6>
                         <select class="form-select fs-custom3 rounded-0" id="tipo_imovel" name="tipo_imovel" required>
                             <option value="casa">Tipo 1</option>
@@ -121,35 +122,35 @@
                 </div>
 
                 <div class="row mt-5">
-                    <div class="col-md-2 mb-2 mb-md-0">
+                    <div class="col-lg-2 mb-2 mb-md-0">
                         <h6 class="text-uppercase mn-blue fw-semibold fs-custom8">Frente</h6>
                         <select class="form-select fs-custom3 rounded-0" id="Quarto" name="Quarto" required>
                             <option value="0">0</option>
                             <option value="1">1</option>
                         </select>
                     </div>
-                    <div class="col-md-2 mb-2 mb-md-0">
+                    <div class="col-lg-2 mb-2 mb-md-0">
                         <h6 class="text-uppercase mn-blue fw-semibold fs-custom8">Fundos</h6>
                         <select class="form-select fs-custom3 rounded-0" id="tipo_imovel" name="tipo_imovel" required>
                             <option value="0">0</option>
                             <option value="1">1</option>
                         </select>
                     </div>
-                    <div class="col-md-2 mb-2 mb-md-0">
+                    <div class="col-lg-2 mb-2 mb-md-0">
                         <h6 class="text-uppercase mn-blue fw-semibold fs-custom8">Esquerdo</h6>
                         <select class="form-select fs-custom3 rounded-0" id="tipo_imovel" name="tipo_imovel" required>
                             <option value="0">0</option>
                             <option value="1">1</option>
                         </select>
                     </div>
-                    <div class="col-md-2 mb-2 mb-md-0">
+                    <div class="col-lg-2 mb-2 mb-md-0">
                         <h6 class="text-uppercase mn-blue fw-semibold fs-custom8">Direito</h6>
                         <select class="form-select fs-custom3 rounded-0" id="tipo_imovel" name="tipo_imovel" required>
                             <option value="0">0</option>
                             <option value="1">1</option>
                         </select>
                     </div>
-                    <div class="col-md-4 mb-2 mb-md-0">
+                    <div class="col-lg-4 mb-2 mb-md-0">
                         <h6 class="text-uppercase mn-blue fw-semibold fs-custom8">Área Total</h6>
                         <select class="form-select fs-custom3 rounded-0" id="tipo_imovel" name="tipo_imovel" required>
                             <option value="casa">Tipo 1</option>
@@ -159,35 +160,35 @@
                 </div>
 
                 <div class="row mt-5">
-                    <div class="col-md-2 mb-2 mb-md-0">
+                    <div class="col-lg-2 mb-2 mb-md-0">
                         <h6 class="text-uppercase mn-blue fw-semibold fs-custom8">Zona</h6>
                         <select class="form-select fs-custom3 rounded-0" id="Quarto" name="Quarto" required>
                             <option value="0">0</option>
                             <option value="1">1</option>
                         </select>
                     </div>
-                    <div class="col-md-2 mb-2 mb-md-0">
+                    <div class="col-lg-2 mb-2 mb-md-0">
                         <h6 class="text-uppercase mn-blue fw-semibold fs-custom8">Ano Cons</h6>
                         <select class="form-select fs-custom3 rounded-0" id="tipo_imovel" name="tipo_imovel" required>
                             <option value="0">0</option>
                             <option value="1">1</option>
                         </select>
                     </div>
-                    <div class="col-md-2 mb-2 mb-md-0">
+                    <div class="col-lg-2 mb-2 mb-md-0">
                         <h6 class="text-uppercase mn-blue fw-semibold fs-custom8">Área Reforma</h6>
                         <select class="form-select fs-custom3 rounded-0" id="tipo_imovel" name="tipo_imovel" required>
                             <option value="0">0</option>
                             <option value="1">1</option>
                         </select>
                     </div>
-                    <div class="col-md-2 mb-2 mb-md-0">
+                    <div class="col-lg-2 mb-2 mb-md-0">
                         <h6 class="text-uppercase mn-blue fw-semibold fs-custom8">Mobiliado</h6>
                         <select class="form-select fs-custom3 rounded-0" id="tipo_imovel" name="tipo_imovel" required>
                             <option value="0">0</option>
                             <option value="1">1</option>
                         </select>
                     </div>
-                    <div class="col-md-4 mb-2 mb-md-0">
+                    <div class="col-lg-4 mb-2 mb-md-0">
                         <h6 class="text-uppercase mn-blue fw-semibold fs-custom8">Face</h6>
                         <select class="form-select fs-custom3 rounded-0" id="tipo_imovel" name="tipo_imovel" required>
                             <option value="casa">Tipo 1</option>
@@ -990,7 +991,7 @@
 
                         <div class="col-lg-8 mt-4">
                             <div class="row">
-                                <div class="col-md-4 mb-4 mb-lg-0">
+                                <div class="col-lg-4 mb-4 mb-lg-0">
                                     <h6 class="text-uppercase mn-blue fw-semibold fs-custom8">Valor de venda</h6>
                                     <div class="input-group h-50 mb-2">
                                         <span class="input-group-text rounded-0 fs-custom3" id="basic-addon1">R$</span>
@@ -1001,7 +1002,7 @@
                                         <label class="form-check-label mn-blue fw-semibold fs-custom8" for="flexSwitchCheckDefault">Usou FGTS nos últimos 3 anos?</label>
                                     </div>
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-lg-4">
                                     <h6 class="text-uppercase mn-blue fw-semibold fs-custom8">Pagamento</h6>
                                     <div class="h-50 mb-2">
                                         <select class="form-select fs-custom3 rounded-0 h-100" id="categoria" name="categoria" required>
@@ -1017,14 +1018,14 @@
                             </div>
 
                             <div class="row mt-5">
-                                <div class="col-md-4">
+                                <div class="col-lg-4">
                                     <h6 class="text-uppercase mn-blue fw-semibold fs-custom8">Valor do aluguel</h6>
                                     <div class="input-group h-50 mb-2">
                                         <span class="input-group-text rounded-0 fs-custom3" id="basic-addon1">R$</span>
                                         <input type="text" class="form-control border rounded-0 h-100" aria-label="ValorVenda" aria-describedby="basic-addon1">
                                     </div>
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-lg-4">
                                     <h6 class="text-uppercase mn-blue fw-semibold fs-custom8">Pagamento do aluguel</h6>
                                     <div class="h-50 mb-2">
                                         <select class="form-select fs-custom3 rounded-0 h-100" id="categoria" name="categoria" required>
@@ -1036,14 +1037,14 @@
                             </div>
 
                             <div class="row mt-3">
-                                <div class="col-md-4">
+                                <div class="col-lg-4">
                                     <h6 class="text-uppercase mn-blue fw-semibold fs-custom8">Condomínio / Mês</h6>
                                     <div class="input-group h-50 mb-2">
                                         <span class="input-group-text rounded-0 fs-custom3" id="basic-addon1">R$</span>
                                         <input type="text" class="form-control border rounded-0 h-100" aria-label="ValorVenda" aria-describedby="basic-addon1">
                                     </div>
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-lg-4">
                                     <h6 class="text-uppercase mn-blue fw-semibold fs-custom8">IPTU / Mês</h6>
                                     <div class="input-group h-50 mb-2">
                                         <span class="input-group-text rounded-0 fs-custom3" id="basic-addon1">R$</span>
@@ -1053,14 +1054,14 @@
                             </div>
 
                             <div class="row mt-3">
-                                <div class="col-md-4">
+                                <div class="col-lg-4">
                                     <h6 class="text-uppercase mn-blue fw-semibold fs-custom8">Seguro</h6>
                                     <div class="input-group h-50 mb-2">
                                         <span class="input-group-text rounded-0 fs-custom3" id="basic-addon1">R$</span>
                                         <input type="text" class="form-control border rounded-0 h-100" aria-label="ValorVenda" aria-describedby="basic-addon1">
                                     </div>
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-lg-4">
                                     <h6 class="text-uppercase mn-blue fw-semibold fs-custom8">Taxa de serviço</h6>
                                     <div class="input-group h-50 mb-2">
                                         <span class="input-group-text rounded-0 fs-custom3" id="basic-addon1">R$</span>
@@ -1149,7 +1150,7 @@
                         </div>
 
                         <div class="row">
-                            <div class="col-md-5">
+                            <div class="col-lg-5">
                                 <div class="mb-3">
                                     <h6 class="text-uppercase mn-blue fw-semibold fs-custom8">Título do imóvel</h6>
                                     <div class="input-group mb-2">

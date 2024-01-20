@@ -5,7 +5,22 @@
 	font-family: 'Cabin', sans-serif;
 }
 
-/*Estilos da pagina de edição*/
+/*VARs*/
+
+:root{
+	--white:#ffffff;
+	--gray-text:#8f8f8f;
+	--red:#e64141;
+	--inputs-color:#fafafa;
+	--btn-colors:#e8e8e8;
+	--black:#333333;
+	--gray-light:#758198;
+	--mn-blue:#344767;
+}
+
+/*Fim VARs*/
+
+/*css da pagina de edição*/
 
 body{
 	transition:background-color 0.5s ease !important;
@@ -28,7 +43,7 @@ header{
 
 
 
-/*Fim estilos da pagina de edição*/
+/*css da pagina de edição*/
 
 /*Animação icon coração*/
 .clickable-icon {
@@ -48,21 +63,6 @@ header{
 }
 
 /*Fim placeholders*/
-
-/*VARs*/
-
-:root{
-	--white:#ffffff;
-	--gray-text:#8f8f8f;
-	--red:#e64141;
-	--inputs-color:#fafafa;
-	--btn-colors:#e8e8e8;
-	--black:#333333;
-	--gray-light:#758198;
-	--mn-blue:#344767;
-}
-
-/*Fim VARs*/
 
 /*Configs de margins, paddings e font-sizes*/
 

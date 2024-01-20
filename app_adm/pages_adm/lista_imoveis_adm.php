@@ -1,7 +1,7 @@
         <?php include("../php_adm/protect.php");?>
 
         <!-- Conteúdo principal -->
-        <div class="center mt-2 col-md-12">
+        <div class="center mt-2 col-lg-12">
         
                 <!-- Lista de produtos em cards -->
             <?php

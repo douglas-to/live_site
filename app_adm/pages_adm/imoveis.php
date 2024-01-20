@@ -6,15 +6,17 @@
 ?>
 <section class="p-3 mt-5">
   <div class="row">    
-      <div class="col-md-7">
+      <div class="col-lg-7">
          <?php include("imoveis_subnav.php");?>
       </div>
 
-      <div class="col-md-5 mt-md-0 mt-5">
+      <div class="col-lg-5 mt-md-0 mt-5">
           <div class="map-imoveis"></div>
       </div>
   </div>
 </section>
+
+
 
 <?php include("../includes_adm/footer.php"); ?>
 

@@ -105,7 +105,7 @@
    <div class="row mt-4">
       <div class="col-lg-6 mb-lg-0 mb-4">
          <div class="row d-flex flex-md-row flex-column">
-            <div class="col-md-7">
+            <div class="col-lg-7">
                <div class="card mb-2 rounded-0 border-0 bg-card">
                   <div class="card-body" style="height:74vh;">
                      <h5 style="color:#344767;" class="card-title text-uppercase fw-semibold fs-custom1">Negócios em andamento</h5>
@@ -114,7 +114,7 @@
                   </div>
                </div>
             </div>
-            <div class="col-md-5">
+            <div class="col-lg-5">
                <div class="card mb-4 rounded-0 border-0 bg-card">
                   <div class="card-body">
                      <h5 style="color:#344767;" class="card-title text-uppercase fw-semibold fs-custom2">Tarefas</h5>
@@ -147,7 +147,7 @@
       </div>
       <div class="col-lg-6 mb-lg-0 mb-4">
          <div class="row d-flex flex-md-row flex-column">
-            <div class="col-md-6">
+            <div class="col-lg-6">
                <div class="card mb-2 rounded-0 border-0 bg-card" style="height:74vh;">
                   <div class="card-body">
                      <h5 style="color:#344767;" class="card-title text-uppercase fw-semibold fs-custom1">Imóveis recentes</h5>
@@ -210,7 +210,7 @@
                   </div>
                </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-lg-6">
                <div class="card mb-4 rounded-0 border-0 bg-card" style="height:35vh;">
                   <div class="card-body">
                      <h5 style="color:#344767;" class="card-title text-uppercase fw-semibold fs-custom2">Imóveis para locação</h5>

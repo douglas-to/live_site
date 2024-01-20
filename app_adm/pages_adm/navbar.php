@@ -5,7 +5,7 @@
 <body>
    <!-- Desktop Navigation -->
    <header class="ps-3 pe-3 mt-3">
-      <div class="col-md-12">
+      <div class="col-lg-12">
          <div class="nav1">
             <ul class="nav d-flex flex-row justify-content-md-between justify-content-center align-items-center">
                <li class="nav-item d-block d-lg-none me-5">
@@ -40,7 +40,7 @@
                   <a class="text-decoration-none gray2 me-3 d-none d-lg-block" aria-current="page" href="#">
                   <i class="fa-solid fa-earth-americas"></i>
                   </a>
-                  <a class="text-decoration-none gray2 me-3 d-none d-lg-block" aria-current="page" href="#">
+                  <a class="text-decoration-none gray2 me-3 d-none d-lg-block" aria-current="page" href="nofication.php">
                   <i class="fa-regular fa-bell"></i>
                   </a>
                   <div class="dropstart d-none d-lg-block">
@@ -157,8 +157,8 @@
                         </a>
                      </li>
                      <li class="nav-item">
-                        <a class="nav-link" href="#">
-                        <i class="fa-regular fa-envelope me-2"></i>Caixa de Correio
+                        <a class="nav-link" href="tasks.php">
+                        <i class="fa-solid fa-list-check me-2"></i>Relatórios
                         </a>
                      </li>
                      <li class="nav-item">
@@ -181,11 +181,6 @@
                      <li class="nav-item">
                         <a class="nav-link" href="dashboard.php">
                         <i class="fa-solid fa-chart-simple me-2"></i>Dashboard
-                        </a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="tasks.php">
-                        <i class="fa-regular fa-lightbulb me-2"></i>Tarefas
                         </a>
                      </li>
                   </div>
