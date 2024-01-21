@@ -1,5 +1,5 @@
 <?php 
-	include("../php_adm/protect.php");
+	
 	include("../includes_adm/header.php");
 ?>
 <style>

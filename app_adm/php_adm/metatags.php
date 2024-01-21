@@ -27,31 +27,45 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // Atualizar ou inserir palavras-chave
-    $keywordsArray = explode(',', $keywords);
 
-    // Remover espaços em branco extras das palavras-chave
-    $keywordsArray = array_map('trim', $keywordsArray);
+    $pageId = 1; // O ID da página para o qual as palavras-chave devem ser associadas
 
-    // Remover palavras-chave vazias
-    $keywordsArray = array_filter($keywordsArray);
+    // Verificar se já existem palavras-chave para esta página
+    $checkKeywordsSql = "SELECT id FROM keywords WHERE page_id = ?";
+    $checkKeywordsStmt = $mysqli->prepare($checkKeywordsSql);
+    $checkKeywordsStmt->bind_param("i", $pageId);
+    $checkKeywordsStmt->execute();
+    $checkKeywordsResult = $checkKeywordsStmt->get_result();
+    $checkKeywordsStmt->close();
 
-    // Obter o ID da página
-    $pageId = 1;
+    if ($checkKeywordsResult->num_rows > 0) {
+        // Se existirem palavras-chave, atualizar apenas as novas
+        $insertKeywordsSql = "INSERT INTO keywords (keyword, page_id) VALUES (?, ?)";
+        $insertKeywordsStmt = $mysqli->prepare($insertKeywordsSql);
 
-    // Excluir palavras-chave existentes para a página
-    $deleteKeywordsSql = "DELETE FROM keywords WHERE page_id = ?";
-    $deleteKeywordsStmt = $mysqli->prepare($deleteKeywordsSql);
-    $deleteKeywordsStmt->bind_param("i", $pageId);
-    $deleteKeywordsStmt->execute();
-    $deleteKeywordsStmt->close();
+        foreach (explode(',', $keywords) as $keyword) {
+            $trimmedKeyword = trim($keyword);
+            if (!empty($trimmedKeyword)) {
+                $insertKeywordsStmt->bind_param("si", $trimmedKeyword, $pageId);
+                $insertKeywordsStmt->execute();
+            }
+        }
 
-    // Inserir novas palavras-chave
-    foreach ($keywordsArray as $keyword) {
-        $insertKeywordSql = "INSERT INTO keywords (keyword, page_id) VALUES (?, ?)";
-        $insertKeywordStmt = $mysqli->prepare($insertKeywordSql);
-        $insertKeywordStmt->bind_param("si", $keyword, $pageId);
-        $insertKeywordStmt->execute();
-        $insertKeywordStmt->close();
+        $insertKeywordsStmt->close();
+    } else {
+        // Se não existirem palavras-chave, inserir todas
+        $insertKeywordsSql = "INSERT INTO keywords (keyword, page_id) VALUES (?, ?)";
+        $insertKeywordsStmt = $mysqli->prepare($insertKeywordsSql);
+
+        foreach (explode(',', $keywords) as $keyword) {
+            $trimmedKeyword = trim($keyword);
+            if (!empty($trimmedKeyword)) {
+                $insertKeywordsStmt->bind_param("si", $trimmedKeyword, $pageId);
+                $insertKeywordsStmt->execute();
+            }
+        }
+
+        $insertKeywordsStmt->close();
     }
 
     // Limpar os campos após o envio
@@ -80,6 +94,5 @@ $keywordsString = implode(', ', $keywordsArray);
 
 // Fechar a conexão com o banco de dados
 $mysqli->close();
+
 ?>
-
-
