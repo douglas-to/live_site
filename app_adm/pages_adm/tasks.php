@@ -17,7 +17,7 @@
 
          <div class="row mt-1 mb-3">
             <div class="col-lg-4 mb-2 mb-lg-0">
-               <div class="card rounded-0 h-100">
+               <div class="card rounded-0 h-100 bg-card border-0">
                   <div class="card-body">
                      <h5 class="card-title mn-blue fs-custom1 fw-semibold">Clientes potenciais</h5>
                      <p class="card-text fs-custom3 gray2">Número de clientes criados a partir de solicitações as suas propriedades ou adicionadas manualmente.</p>
@@ -27,7 +27,7 @@
             </div>
 
             <div class="col-lg-4 mb-2 mb-lg-0">
-               <div class="card rounded-0 h-100">
+               <div class="card rounded-0 h-100 bg-card border-0">
                   <div class="card-body">
                      <h5 class="card-title mn-blue fs-custom1 fw-semibold">Designações de clientes potenciais</h5>
                      <p class="card-text fs-custom3 gray2">Número de leads atribuídos a cada usuário / clientes e seu status.</p>
@@ -37,7 +37,7 @@
             </div>
 
             <div class="col-lg-4 mb-2 mb-lg-0">
-               <div class="card rounded-0 h-100">
+               <div class="card rounded-0 h-100 bg-card border-0">
                   <div class="card-body">
                      <h5 class="card-title mn-blue fs-custom1 fw-semibold">Clientes potenciais ganhos</h5>
                      <p class="card-text fs-custom3 gray2">Número de leads fechado ou suspenso por cada usuário / clientes.</p>
@@ -49,7 +49,7 @@
 
          <div class="row mb-3">
             <div class="col-lg-4 mb-2 mb-lg-0">
-               <div class="card rounded-0 h-100">
+               <div class="card rounded-0 h-100 bg-card border-0">
                   <div class="card-body">
                      <h5 class="card-title mn-blue fs-custom1 fw-semibold">Fontes de clientes potenciais</h5>
                      <p class="card-text fs-custom3 gray2">Porcentagem de leads capturados por cada fonte registrada.</p>
@@ -59,7 +59,7 @@
             </div>
 
             <div class="col-lg-4 mb-2 mb-lg-0">
-               <div class="card rounded-0 h-100">
+               <div class="card rounded-0 h-100 bg-card border-0">
                   <div class="card-body">
                      <h5 class="card-title mn-blue fs-custom1 fw-semibold">História de atividades</h5>
                      <p class="card-text fs-custom3 gray2">Número de atividades registradas por categoria ao longo de um período de tempo.</p>
@@ -69,7 +69,7 @@
             </div>
 
             <div class="col-lg-4 mb-2 mb-lg-0">
-               <div class="card rounded-0 h-100">
+               <div class="card rounded-0 h-100 bg-card border-0">
                   <div class="card-body">
                      <h5 class="card-title mn-blue fs-custom1 fw-semibold">Solicitações da web</h5>
                      <p class="card-text fs-custom3 gray2">Número de solicitações da web do meu site, dashboard e portal público.</p>
@@ -81,7 +81,7 @@
 
          <div class="row mb-3">
             <div class="col-lg-4 mb-2 mb-lg-0">
-               <div class="card rounded-0 h-100">
+               <div class="card rounded-0 h-100 bg-card border-0">
                   <div class="card-body">
                      <h5 class="card-title mn-blue fs-custom1 fw-semibold">Fontes de solicitações web</h5>
                      <p class="card-text fs-custom3 gray2">Porcentagem de solicitações web capturadas por cada fonte registrada.</p>
@@ -91,7 +91,7 @@
             </div>
 
             <div class="col-lg-4 mb-2 mb-lg-0">
-               <div class="card rounded-0 h-100">
+               <div class="card rounded-0 h-100 bg-card border-0">
                   <div class="card-body">
                      <h5 class="card-title mn-blue fs-custom1 fw-semibold">Propriedades com mais solicitações web</h5>
                      <p class="card-text fs-custom3 gray2">Relatório por origem das propriedades com mais solicitações web durante um período.</p>
@@ -101,7 +101,7 @@
             </div>
 
             <div class="col-lg-4 mb-2 mb-lg-0">
-               <div class="card rounded-0 h-100">
+               <div class="card rounded-0 h-100 bg-card border-0">
                   <div class="card-body">
                      <h5 class="card-title mn-blue fs-custom1 fw-semibold">Solicitações da web de propriedades</h5>
                      <p class="card-text fs-custom3 gray2">Relatório por fonte das propriedades com mais solicitações web durante um período.</p>
