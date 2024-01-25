@@ -5,6 +5,10 @@
 	font-family: 'Cabin', sans-serif;
 }
 
+.fc-button {
+	border-radius: 0;
+  }
+
 /*VARs*/
 
 :root{

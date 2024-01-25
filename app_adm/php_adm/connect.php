@@ -1,14 +1,16 @@
-<?php 
+<?php
 
-	$DB_HOST = "localhost";
-	$DB_USER = "root";
-	$DB_PASSWORD = "";
-	$DB_NAME = "live_db";
+// Inicio da conexão com o banco de dados utilizando PDO
+$host = "localhost";
+$user = "root";
+$pass = "";
+$dbname = "live_db";
 
 
-	$mysqli = new mysqli($DB_HOST, $DB_USER, $DB_PASSWORD, $DB_NAME); 
+try {
+    $conn = new PDO("mysql:host=$host;dbname=" . $dbname, $user, $pass);
+} catch (PDOException $err) {
+    die("Erro: Conexão com banco de dados não realizado com sucesso. Erro gerado " . $err->getMessage());
+}
 
-	if(!$mysqli){
-		die("Houve um erro! " . mysqli_connect_error());
-	}
 ?>

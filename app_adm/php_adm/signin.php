@@ -1,33 +1,30 @@
-<?php 
-	include_once("connect.php");
+<?php
+include_once("connect.php");
 
-	if(isset($_POST['userEmail']) && isset($_POST['userPassword'])){
-		
-		$email = $_POST['userEmail'];
-		$password = $_POST['userPassword'];
+if (isset($_POST['userEmail']) && isset($_POST['userPassword'])) {
 
-		$clearInputEmail = $mysqli->real_escape_string($email);
-		$clearInputPassword = $mysqli->real_escape_string($password);
+    $email = $_POST['userEmail'];
+    $password = $_POST['userPassword'];
 
-		$sql_code = "SELECT * FROM users WHERE email = '$clearInputEmail'";
-		$sql_exec = $mysqli->query($sql_code) or die('Erro: ' . $mysqli->error);
+    // Não é necessário escapar as variáveis quando se utiliza PDO
 
-		$amount_data = $sql_exec->num_rows;
+    // Utilizando PDO para a consulta
+    $sql_code = "SELECT * FROM users WHERE email = :email";
+    $stmt = $conn->prepare($sql_code);
+    $stmt->bindParam(':email', $email);
+    $stmt->execute();
 
-		if($amount_data == 1){
-			$user = $sql_exec->fetch_assoc();
-			if(password_verify($clearInputPassword, $user['password'])){
-				session_start();
-				$_SESSION['id'] = $user['id'];
-				header('Location: ../pages_adm/dashboard.php');
-				exit(); // Garante que o script pare após o redirecionamento
-			} else {
-				header('Location: ../pages_adm/login.php?error=data_err');
-				exit();
-			}
-		} else {
-			header('Location: ../pages_adm/login.php?error=data_err');
-			exit();
-		}
-	}
+    $user = $stmt->fetch(PDO::FETCH_ASSOC);
+
+    // Verificando a senha usando password_verify
+    if ($user && password_verify($password, $user['password'])) {
+        session_start();
+        $_SESSION['id'] = $user['id'];
+        header('Location: ../pages_adm/dashboard.php');
+        exit(); // Garante que o script pare após o redirecionamento
+    } else {
+        header('Location: ../pages_adm/login.php?error=data_err');
+        exit();
+    }
+}
 ?>

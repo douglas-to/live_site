@@ -8,22 +8,24 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Verificar se já existe uma página no banco de dados
     $checkPageSql = "SELECT id FROM pages WHERE id = 1";
-    $checkPageResult = $mysqli->query($checkPageSql);
+    $checkPageResult = $conn->query($checkPageSql);
 
-    if ($checkPageResult->num_rows > 0) {
+    if ($checkPageResult->rowCount() > 0) {
         // A página já existe, então atualizamos os valores
-        $updatePageSql = "UPDATE pages SET title = ?, description = ? WHERE id = 1";
-        $updatePageStmt = $mysqli->prepare($updatePageSql);
-        $updatePageStmt->bind_param("ss", $title, $description);
+        $updatePageSql = "UPDATE pages SET title = :title, description = :description WHERE id = 1";
+        $updatePageStmt = $conn->prepare($updatePageSql);
+        $updatePageStmt->bindParam(':title', $title);
+        $updatePageStmt->bindParam(':description', $description);
         $updatePageStmt->execute();
-        $updatePageStmt->close();
+        $updatePageStmt->closeCursor();
     } else {
         // A página não existe, então inserimos os valores
-        $insertPageSql = "INSERT INTO pages (title, description) VALUES (?, ?)";
-        $insertPageStmt = $mysqli->prepare($insertPageSql);
-        $insertPageStmt->bind_param("ss", $title, $description);
+        $insertPageSql = "INSERT INTO pages (title, description) VALUES (:title, :description)";
+        $insertPageStmt = $conn->prepare($insertPageSql);
+        $insertPageStmt->bindParam(':title', $title);
+        $insertPageStmt->bindParam(':description', $description);
         $insertPageStmt->execute();
-        $insertPageStmt->close();
+        $insertPageStmt->closeCursor();
     }
 
     // Atualizar ou inserir palavras-chave
@@ -31,41 +33,41 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $pageId = 1; // O ID da página para o qual as palavras-chave devem ser associadas
 
     // Verificar se já existem palavras-chave para esta página
-    $checkKeywordsSql = "SELECT id FROM keywords WHERE page_id = ?";
-    $checkKeywordsStmt = $mysqli->prepare($checkKeywordsSql);
-    $checkKeywordsStmt->bind_param("i", $pageId);
+    $checkKeywordsSql = "SELECT id FROM keywords WHERE page_id = :pageId";
+    $checkKeywordsStmt = $conn->prepare($checkKeywordsSql);
+    $checkKeywordsStmt->bindParam(':pageId', $pageId);
     $checkKeywordsStmt->execute();
-    $checkKeywordsResult = $checkKeywordsStmt->get_result();
-    $checkKeywordsStmt->close();
+    $checkKeywordsResult = $checkKeywordsStmt->rowCount();
+    $checkKeywordsStmt->closeCursor();
 
-    if ($checkKeywordsResult->num_rows > 0) {
+    if ($checkKeywordsResult > 0) {
         // Se existirem palavras-chave, atualizar apenas as novas
-        $insertKeywordsSql = "INSERT INTO keywords (keyword, page_id) VALUES (?, ?)";
-        $insertKeywordsStmt = $mysqli->prepare($insertKeywordsSql);
+        $insertKeywordsSql = "INSERT INTO keywords (keyword, page_id) VALUES (:keyword, :pageId)";
+        $insertKeywordsStmt = $conn->prepare($insertKeywordsSql);
 
         foreach (explode(',', $keywords) as $keyword) {
             $trimmedKeyword = trim($keyword);
             if (!empty($trimmedKeyword)) {
-                $insertKeywordsStmt->bind_param("si", $trimmedKeyword, $pageId);
+                $insertKeywordsStmt->bindParam(':keyword', $trimmedKeyword);
+                $insertKeywordsStmt->bindParam(':pageId', $pageId);
                 $insertKeywordsStmt->execute();
+                $insertKeywordsStmt->closeCursor();
             }
         }
-
-        $insertKeywordsStmt->close();
     } else {
         // Se não existirem palavras-chave, inserir todas
-        $insertKeywordsSql = "INSERT INTO keywords (keyword, page_id) VALUES (?, ?)";
-        $insertKeywordsStmt = $mysqli->prepare($insertKeywordsSql);
+        $insertKeywordsSql = "INSERT INTO keywords (keyword, page_id) VALUES (:keyword, :pageId)";
+        $insertKeywordsStmt = $conn->prepare($insertKeywordsSql);
 
         foreach (explode(',', $keywords) as $keyword) {
             $trimmedKeyword = trim($keyword);
             if (!empty($trimmedKeyword)) {
-                $insertKeywordsStmt->bind_param("si", $trimmedKeyword, $pageId);
+                $insertKeywordsStmt->bindParam(':keyword', $trimmedKeyword);
+                $insertKeywordsStmt->bindParam(':pageId', $pageId);
                 $insertKeywordsStmt->execute();
+                $insertKeywordsStmt->closeCursor();
             }
         }
-
-        $insertKeywordsStmt->close();
     }
 
     // Limpar os campos após o envio
@@ -80,19 +82,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 // Obter as configurações atuais da página após a atualização ou inserção
 $sql = "SELECT * FROM pages WHERE id=1";
-$resultado = $mysqli->query($sql);
-$pagina = $resultado->fetch_assoc();
+$resultado = $conn->query($sql);
+$pagina = $resultado->fetch(PDO::FETCH_ASSOC);
 
 // Obter as palavras-chave atuais da página
 $keywordsSql = "SELECT keyword FROM keywords WHERE page_id = 1";
-$keywordsResultado = $mysqli->query($keywordsSql);
+$keywordsResultado = $conn->query($keywordsSql);
 $keywordsArray = [];
-while ($keyword = $keywordsResultado->fetch_assoc()) {
+while ($keyword = $keywordsResultado->fetch(PDO::FETCH_ASSOC)) {
     $keywordsArray[] = htmlspecialchars($keyword['keyword']);
 }
 $keywordsString = implode(', ', $keywordsArray);
 
 // Fechar a conexão com o banco de dados
-$mysqli->close();
-
+$conn = null;
 ?>
+
