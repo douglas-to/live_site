@@ -295,7 +295,7 @@
                                     <div class="form-check">
                                         <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                                         <label class="form-check-label fs-custom8 mn-blue" for="flexCheckDefault">
-                                            Mobiliado
+                                            Mobilia usada
                                         </label>
                                     </div>
 
@@ -479,7 +479,7 @@
                                     <div class="form-check">
                                         <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                                         <label class="form-check-label fs-custom8 mn-blue" for="flexCheckDefault">
-                                            Elevador
+                                            Elevador de serviço
                                         </label>
                                     </div>
 
@@ -561,7 +561,7 @@
                                     <div class="form-check">
                                         <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                                         <label class="form-check-label fs-custom8 mn-blue" for="flexCheckDefault">
-                                            Ar condicionado
+                                            Ventilação
                                         </label>
                                     </div>
 
@@ -605,7 +605,7 @@
                                     <div class="form-check">
                                         <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                                         <label class="form-check-label fs-custom8 mn-blue" for="flexCheckDefault">
-                                            Lareira
+                                            Móveis de madeira
                                         </label>
                                     </div>
 
@@ -621,7 +621,7 @@
                                     <div class="form-check">
                                         <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                                         <label class="form-check-label fs-custom8 mn-blue" for="flexCheckDefault">
-                                            Mobiliado
+                                            Mobília nova
                                         </label>
                                     </div>
 
@@ -716,245 +716,6 @@
                                     <h6 class="text-uppercase mn-blue fw-semibold fs-custom8">Ano de construção</h6>
                                     <div class="input-group mb-3">
                                         <input type="text" class="form-control border rounded-0" aria-label="Username" aria-describedby="basic-addon1">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-5">
-                        <h6 class="text-uppercase mn-blue fw-semibold mb-4 mb-md-5 fs-custom5">
-                            <i class="fas fa-tag me-2"></i>Características do Condomínio
-                        </h6>
-                        
-                        <div class="row">
-                            <div class="d-flex flex-column flex-md-row">
-                                <div class="col">
-                                    <h6 class="text-uppercase mn-blue fw-semibold mb-3 fs-custom8">
-                                        <i class="fa-solid fa-person-swimming me-2"></i>Diferenciais
-                                    </h6>
-
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                        <label class="form-check-label fs-custom8 mn-blue" for="flexCheckDefault">
-                                            Ar condicionado
-                                        </label>
-                                    </div>
-
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                        <label class="form-check-label fs-custom8 mn-blue" for="flexCheckDefault">
-                                            Lareira
-                                        </label>
-                                    </div>
-
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                        <label class="form-check-label fs-custom8 mn-blue" for="flexCheckDefault">
-                                            Mobiliado
-                                        </label>
-                                    </div>
-
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                        <label class="form-check-label fs-custom8 mn-blue" for="flexCheckDefault">
-                                            Varanda gourmet
-                                        </label>
-                                    </div>
-
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                        <label class="form-check-label fs-custom8 mn-blue" for="flexCheckDefault">
-                                            Academia
-                                        </label>
-                                    </div>
-
-                                    <div class="mt-3"></div>
-
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                        <label class="form-check-label fs-custom8 mn-blue" for="flexCheckDefault">
-                                            Churrasqueira
-                                        </label>
-                                    </div>
-
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                        <label class="form-check-label fs-custom8 mn-blue" for="flexCheckDefault">
-                                            Elevador
-                                        </label>
-                                    </div>
-
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                        <label class="form-check-label fs-custom8 mn-blue" for="flexCheckDefault">
-                                            Espaço verde
-                                        </label>
-                                    </div>
-
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                        <label class="form-check-label fs-custom8 mn-blue" for="flexCheckDefault">
-                                            Gerador elétrico
-                                        </label>
-                                    </div>
-
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                        <label class="form-check-label fs-custom8 mn-blue" for="flexCheckDefault">
-                                            Jardim
-                                        </label>
-                                    </div>
-
-                                    <div class="mb-3"></div>
-
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                        <label class="form-check-label fs-custom8 mn-blue" for="flexCheckDefault">
-                                            Piscina
-                                        </label>
-                                    </div>
-
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                        <label class="form-check-label fs-custom8 mn-blue" for="flexCheckDefault">
-                                            Piscina para crianças
-                                        </label>
-                                    </div>
-
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                        <label class="form-check-label fs-custom8 mn-blue" for="flexCheckDefault">
-                                            Playground
-                                        </label>
-                                    </div>
-
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                        <label class="form-check-label fs-custom8 mn-blue" for="flexCheckDefault">
-                                            Recepção
-                                        </label>
-                                    </div>
-
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                        <label class="form-check-label fs-custom8 mn-blue" for="flexCheckDefault">
-                                            Salão de festas
-                                        </label>
-                                    </div>
-                                </div>
-
-                                <div class="col mt-md-0 mt-4">
-                                    <h6 class="text-uppercase mn-blue fw-semibold mb-3 fs-custom8">
-                                        <i class="fas fa-chart-area me-2"></i>Acessos a área:
-                                    </h6>
-
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                        <label class="form-check-label fs-custom8 mn-blue" for="flexCheckDefault">
-                                            Perto de escolas
-                                        </label>
-                                    </div>
-
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                        <label class="form-check-label fs-custom8 mn-blue" for="flexCheckDefault">
-                                            Perto de hospitais
-                                        </label>
-                                    </div>
-
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                        <label class="form-check-label fs-custom8 mn-blue" for="flexCheckDefault">
-                                            Perto de shopping
-                                        </label>
-                                    </div>
-
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                        <label class="form-check-label fs-custom8 mn-blue" for="flexCheckDefault">
-                                            Perto de transportes
-                                        </label>
-                                    </div>
-
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                        <label class="form-check-label fs-custom8 mn-blue" for="flexCheckDefault">
-                                            Perto de vias de acesso
-                                        </label>
-                                    </div>
-
-                                    <div class="mt-3"></div>
-
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                        <label class="form-check-label fs-custom8 mn-blue" for="flexCheckDefault">
-                                            Circuito de segurança 
-                                        </label>
-                                    </div>
-
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                        <label class="form-check-label fs-custom8 mn-blue" for="flexCheckDefault">
-                                            Condomínio fechado
-                                        </label>
-                                    </div>
-
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                        <label class="form-check-label fs-custom8 mn-blue" for="flexCheckDefault">
-                                            Interfone
-                                        </label>
-                                    </div>
-
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                        <label class="form-check-label fs-custom8 mn-blue" for="flexCheckDefault">
-                                            Perto de cinemas
-                                        </label>
-                                    </div>
-
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                        <label class="form-check-label fs-custom8 mn-blue" for="flexCheckDefault">
-                                            Elevador
-                                        </label>
-                                    </div>
-
-                                    <div class="mb-3"></div>
-
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                        <label class="form-check-label fs-custom8 mn-blue" for="flexCheckDefault">
-                                            Vigia
-                                        </label>
-                                    </div>
-
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                        <label class="form-check-label fs-custom8 mn-blue" for="flexCheckDefault">
-                                            SPA
-                                        </label>
-                                    </div>
-
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                        <label class="form-check-label fs-custom8 mn-blue" for="flexCheckDefault">
-                                            Salão de jogos
-                                        </label>
-                                    </div>
-
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                        <label class="form-check-label fs-custom8 mn-blue" for="flexCheckDefault">
-                                            Pátio
-                                        </label>
-                                    </div>
-
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                        <label class="form-check-label fs-custom8 mn-blue" for="flexCheckDefault">
-                                            Trifásico
-                                        </label>
                                     </div>
                                 </div>
                             </div>
@@ -1442,7 +1203,7 @@
 
                                             <div class="mb-3">
                                                 <div class="input-group mb-3">
-                                                    <input type="text" class="form-control border rounded-0" placeholder="IPTU">
+                                                    <input type="text" class="form-control border rounded-0" placeholder="IPTU IMÓVEL">
                                                 </div>
                                             </div>
 
